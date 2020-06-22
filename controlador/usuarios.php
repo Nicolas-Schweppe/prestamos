@@ -34,10 +34,10 @@ function _loginAction(){
    if($usuarioNuevo){
       $resultado='ok';
       echo ("<div><script> alert('Usuario Agregado');</script></div>");
-      header('Location:http://localhost:8080/afamp/prestamos/index.php?controlador=usuarios&accion=listarUsuarios');
+      header('Location:http://localhost/afamp/prestamos/index.php?controlador=usuarios&accion=listarUsuarios');
     }else{
       $resultado='no';
-      header('Location:http://localhost:8080/afamp/prestamos/index.php?controlador=usuarios&accion=listarUsuarios');
+      header('Location:http://localhost/afamp/prestamos/index.php?controlador=usuarios&accion=listarUsuarios');
     }
     mysqli_close($mysqli);
   }
