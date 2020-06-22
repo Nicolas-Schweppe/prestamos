@@ -66,13 +66,13 @@ if(isset($_POST['generarPrestamos'])) {
 }else{}
 }
  if($prestamoCuota == 'ok'){
-   
+
    echo ("<div><script> alert('Prestamo generado con EXITO');</script></div>");
-   header('Location:http://localhost:8080/afamp/prestamos/index.php?controlador=prestamos&accion=generarPrestamos');
+   header('Location:http://localhost/afamp/prestamos/index.php?controlador=prestamos&accion=generarPrestamos');
    }else{
     echo ("<div><script> alert('ERROR ! problemas al generar el prestamo');</script></div>");
 
-   header('Location:http://localhost:8080/afamp/prestamos/index.php?controlador=prestamos&accion=generarPrestamos');
+   header('Location:http://localhost/afamp/prestamos/index.php?controlador=prestamos&accion=generarPrestamos');
    }
    $accion="Nuevo Prestamo";session_start();$_SESSION['sesion_id'];$usuario=$_SESSION['usuario'];date_default_timezone_set('America/Argentina/Mendoza');$tiempo=date('j F Y h:i:s A');$seguimiento=agregarSeguimiento($tiempo,$usuario,$accion);
 
@@ -84,8 +84,8 @@ if($_POST['prestamosEliminar']){
 
   include('../modelo/prestamos.php');
   include('../modelo/cuotas.php');
-  include('../modelo/seguimiento.php');
-  $accion="Prestamo Eliminado";session_start();$_SESSION['sesion_id'];$usuario=$_SESSION['usuario'];date_default_timezone_set('America/Argentina/Mendoza');$tiempo=date('j F Y h:i:s A');$seguimiento=agregarSeguimiento($tiempo,$usuario,$accion);
+  //include('../modelo/seguimiento.php');
+  //$accion="Prestamo Eliminado";session_start();$_SESSION['sesion_id'];$usuario=$_SESSION['usuario'];date_default_timezone_set('America/Argentina/Mendoza');$tiempo=date('j F Y h:i:s A');$seguimiento=agregarSeguimiento($tiempo,$usuario,$accion);
 
 	$prestamoE=$_POST['prestamosEliminar'];
 
