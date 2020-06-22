@@ -40,7 +40,7 @@
       <li class="active"><a href="http://localhost/afamp/prestamos/index.php?controlador=facturas&accion=listarFacturas">Ver Facturas</a></li>
     </ul>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="http://localhost/afamp/prestamos/index.php?controlador=usuarios&accion=listarUsuarios">Usuario</a></li>
+      <li class="active"><a href="http://localhost/afamp/prestamos/index.php?controlador=usuarios&accion=listarUsuarios">Usuariosss</a></li>
     </ul>
     <ul class="nav navbar-nav">
       <li class="active"><a href="http://localhost/afamp/prestamos/index.php?controlador=inicio&accion=pantallaAyuda">Ayuda</a></li>
